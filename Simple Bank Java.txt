@@ -1,0 +1,43 @@
+import java.util.*;
+public class Main{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int bank_amount=1000;
+        System.out.println("Welcome to Simple Bank");
+        System.out.println("1. Check Balance 2. Deposit Money 3. Withdraw Money 4. Exit");
+        while (true)
+        {
+        int option=sc.nextInt();
+        if (option==1)
+        {
+            System.out.println("Your current balance is:"+bank_amount);
+        }
+        else if(option==2)
+        {
+            System.out.println("Enter the amount to deposit");
+            int amount=sc.nextInt();
+            System.out.println(amount+" deposited successfully "+" your new balance is "+ "$" +(bank_amount+amount));
+            bank_amount=bank_amount+amount;
+        }
+        else if(option==3)
+        {
+            System.out.println("enter the amount to withdraw ");
+            int withdraw=sc.nextInt();
+            System.out.println(withdraw+" withdraw successfully "+" your new balance is "+ "$"+(bank_amount-withdraw));
+            bank_amount=bank_amount-withdraw;
+        }
+        else if(option==4)
+        {
+        System.out.println("Thank you for using the Simple Banking System. Goodbye!");
+             break;
+        }
+        else
+        {
+            System.out.println("invalid Option Enter Again");
+        }
+        }
+        
+        
+    }
+}
