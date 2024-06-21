@@ -1,0 +1,26 @@
+
+public class Main{
+public static void main(String[] args) {
+	    int countOval=0;
+	    int countConsonants=0;
+		String str="suryateja";
+		int len=str.length();
+		for(int i=0;i<len;i++)
+		{
+		   if (str.charAt(i)=='a' || str.charAt(i)=='e' ||str.charAt(i)=='i' || str.charAt(i)=='o' || str.charAt(i)=='u'|| str.charAt(i)=='A' || str.charAt(i)=='E' || str.charAt(i)=='I' || str.charAt(i)=='O' || str.charAt(i)=='U')
+		    {
+		        countOval++;
+		    }
+		
+		   else 
+		    {
+		        countConsonants++;
+		    }
+		
+		
+	}
+	System.out.println("no of vowels = "+countOval);
+	System.out.println("no of consonants = "+countConsonants);
+	
+	}
+}
