@@ -1,0 +1,32 @@
+import java.util.*;
+public class Main{
+    public static void main(String[] args)
+    {
+    
+    Scanner sc= new Scanner(System.in);
+    System.out.print("Enter the first number");
+    int x=sc.nextInt();
+    System.out.print("Enter the Second number");
+    int y=sc.nextInt();
+    System.out.print("Enter the Operation +,-,*,/:");
+    char a=sc.next().charAt(0);
+    
+    switch (a){
+        case '+':System.out.print("Sum : "+(x+y));
+        break;
+        
+        case '-':System.out.print("sub : "+(x-y));
+        break;
+        case '*':System.out.print("mul : "+(x*y));
+        break;
+        case '/':System.out.print("div : "+(x/y));
+        break;
+        
+        default :System.out.print("invaid option");
+        break;
+    }
+        
+    }
+    
+    
+}
