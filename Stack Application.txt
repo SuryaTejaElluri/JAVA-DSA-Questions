@@ -1,0 +1,81 @@
+import java.util.*;
+
+public class Main
+{
+    public static Stack<Integer> stack= new Stack<>();
+    public static void stack_push(int n)
+    {
+        stack.push(n);
+    }
+    public static int stack_pop()
+    {
+        return stack.pop();
+    }
+    public static int stack_peek()
+    {
+        return stack.peek();
+    }
+    public static void stack_print()
+    {
+        for(int i=1;i<stack.size();i++)
+        {
+          stack.get(i);
+        }
+    }
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	    while (true)
+	    {
+	    System.out.println("select option \n 1.push \n 2.pop \n 3.peek \n 4.print \n 5.exit ");
+	    int op=sc.nextInt();
+	    if (op==1)
+	    {
+	        System.out.println("Enter the value to push");
+	        int n=sc.nextInt();
+	        stack_push(n);
+	    }
+	    else if (op==2)
+	    {
+	        
+	        if(stack.isEmpty())
+	        {
+	            System.out.println("stack is empty");
+	        }
+	        else
+	        {
+	            System.out.println(stack.pop());
+	        }
+	         
+	    }
+	    else if(op==3)
+	    {
+	        if(stack.isEmpty())
+	        {
+	            System.out.println("stack is empty");
+	        }
+	        else
+	        {
+	        System.out.println(stack.peek());
+	        }
+	    }
+	    else if(op==4)
+	    {
+	        //stack_print();
+	        if(stack.isEmpty())
+	        {
+	            System.out.println("stack is empty");
+	        }
+	        else
+	        {
+	        System.out.println(stack);
+	        }
+	    }
+	    else if(op==5)
+	    {
+	        System.out.println("Thank you for using our application");
+	        break;
+	       
+	    }
+	    }
+	}
+}
